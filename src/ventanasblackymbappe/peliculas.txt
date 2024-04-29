@@ -1,0 +1,45 @@
+El Padrino,Paramount Pictures,Drama,1972
+Titanic,20th Century Studios,Romance,1997
+Interestelar,Warner Bros. Pictures,Ciencia Ficción,2014
+La La Land,Summit Entertainment,Musical,2016
+Jurassic Park,Universal Pictures,Ciencia Ficción,1993
+Piratas del Caribe: La maldición de la Perla Negra,Walt Disney Pictures,Aventura,2003
+Matrix, Warner Bros. Pictures,Ciencia Ficción,1999
+Volver al Futuro,Universal Pictures,Ciencia Ficción,1985
+Forrest Gump,Paramount Pictures,Drama,1994
+El Resplandor,Warner Bros. Pictures,Terror,1980
+Toy Story,Pixar Animation Studios,Animación,1995
+El sesenta y 9,Pixar,Terror,1898
+Gladiator,DreamWorks Pictures,Acción,2000
+El Silencio de los Corderos,Orion Pictures,Thriller,1991
+Los Vengadores,Marvel Studios,Acción,2012
+El Cisne Negro,Fox Searchlight Pictures,Thriller,2010
+Mujer bonita,Touchstone Pictures,Romance,1990
+El Gran Lebowski,PolyGram Filmed Entertainment,Comedia,1998
+El Origen,Warner Bros. Pictures,Ciencia Ficción,2010
+La vida es bella,Miramax Films,Drama,1997
+E.T., el extraterrestre,Universal Pictures,Ciencia Ficción,1982
+El Pianista,Focus Features,Drama,2002
+Pulp Fiction,Miramax Films,Drama,1994
+Mi amigo Aletsis,ChileLives,Comedia,2019
+Blade Runner,Warner Bros. Pictures,Ciencia Ficción,1982
+Joker,Warner Bros. Pictures,Drama,2019
+El Show de Truman,Paramount Pictures, Drama, 1998
+La naranja mecánica, Warner Bros. Pictures,Ciencia Ficción,1971
+El Rey León,Walt Disney Pictures,Animación,2019
+Nemo,Pixar Animation Studios,Animación,2003
+Memento,Summit Entertainment,Thriller,2000
+Harry Potter y la piedra filosofal,Warner Bros. Pictures,Fantasía,2001
+El Gran Hotel Budapest,Fox Searchlight Pictures,Comedia,2014
+El club de la pelea,20th Century Studios,Drama,1999
+Up,Pixar Animation Studios,Animación,2009
+La lista de Schindler,Universal Pictures,Drama,1993
+El Sexto Sentido,Hollywood Pictures,Thriller,1999
+Mujer bonita,Touchstone Pictures,Romance,1990
+La Vida de Pi,20th Century Studios,Aventura,2012
+El Sexto Sentido,Hollywood Pictures,Thriller,1999
+El Gran Lebowski,PolyGram Filmed Entertainment,Comedia,1998
+Parásitos,CJ Entertainment,Drama,2019
+El Origen,Warner Bros. Pictures,Ciencia Ficción,2010
+El Castillo Ambulante,Studio Ghibli,Anime,2004
+Black Clover:La espada del Rey mago,Pierrot,Anime,2023
