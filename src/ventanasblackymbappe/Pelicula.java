@@ -29,11 +29,11 @@ public class Pelicula{
         this.nombre = nombre;
     }
 
-    public String getStudio(){
+    public String getEstudio(){
         return estudio;
     }
 
-    public void setStudio(String studio){
+    public void setEstudio(String studio){
         this.estudio = studio;
     }
 

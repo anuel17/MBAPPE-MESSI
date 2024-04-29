@@ -14,13 +14,13 @@ public class BlackyMBappeFinal {
     private static VideoClub videoClubAux;
     public static void main(String[] args)throws IOException,PeliculaNoEncontradaEx,FormatoRutIncorrectoEx {
         
-         VideoClub videoClubAux = new VideoClub();
+        VideoClub videoClubAux = new VideoClub();
         List<Pelicula> peliculas = videoClubAux.getPeliculas();
         peliculas = ParaLeer.leerPeliculas("C:\\Users\\Javier\\Documents\\NetBeansProjects\\VentanasBlackyMBappe\\src\\ventanasblackymbappe\\peliculas.txt");
         for(Pelicula pelicula : peliculas){
             videoClubAux.agregarPelicula(pelicula);
         }
-        new VentanaIniciarSesion(videoClubAux).setVisible(true);
+        new VentanaMenuPrincipal(videoClubAux).setVisible(true);
     }
     
 }

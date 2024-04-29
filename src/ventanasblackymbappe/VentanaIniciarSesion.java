@@ -152,7 +152,7 @@ public class VentanaIniciarSesion extends javax.swing.JFrame {
     }//GEN-LAST:event_txtnombreActionPerformed
 
     private void SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirActionPerformed
-        System.exit(0);
+        this.setVisible(false);
     }//GEN-LAST:event_SalirActionPerformed
 
     private void IniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IniciarActionPerformed
@@ -160,8 +160,7 @@ public class VentanaIniciarSesion extends javax.swing.JFrame {
         Cliente nuevoUsuario = new Cliente(txtnombre.getText(),txtrut.getText(),edad);
         
         videoClubAux.agregarUsuario(nuevoUsuario);
-        
-        new VentanaMenuPrincipal(videoClubAux).setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_IniciarActionPerformed
 
     private void txtrutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtrutActionPerformed
@@ -196,14 +195,11 @@ public class VentanaIniciarSesion extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        VideoClub videoClubAux = new VideoClub();
-        List<Pelicula> peliculas = videoClubAux.getPeliculas();
-        peliculas = ParaLeer.leerPeliculas("C:\\Users\\Javier\\Documents\\NetBeansProjects\\VentanasBlackyMBappe\\src\\ventanasblackymbappe\\peliculas.txt");
-        for(Pelicula pelicula : peliculas){
-            videoClubAux.agregarPelicula(pelicula);
-        }
-        
-        new VentanaIniciarSesion(videoClubAux).setVisible(true);
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new VentanaIniciarSesion(videoClubAux).setVisible(true);
+            }
+        });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

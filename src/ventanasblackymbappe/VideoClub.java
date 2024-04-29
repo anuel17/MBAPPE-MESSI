@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
-
+import javax.swing.table.DefaultTableModel;
 
 
 public class VideoClub{
@@ -63,7 +63,7 @@ public class VideoClub{
         System.out.println("--------------------------------------");
         for(Pelicula pelicula : peliculas){
             System.out.println("Nombre: " + pelicula.getNombre());
-            System.out.println("Estudio: " + pelicula.getStudio());
+            System.out.println("Estudio: " + pelicula.getEstudio());
             System.out.println("Género: " + pelicula.getGenero());
             System.out.println("Fecha de lanzamiento: " + pelicula.getFechaLanzamiento());
             System.out.println("Disponible: " + (pelicula.isDisponible() ? "Sí" : "No"));
@@ -130,30 +130,36 @@ public class VideoClub{
             System.out.println("La película \"" + nombrePelicula + "\" no está reservada.");
         }
     }
-
-    // Método para agregar una película a las favoritas
+    
+    public Pelicula buscarPelicula(String nombrePelicula){
+        for (Pelicula pelicula : this.getPeliculas()) {
+            if (pelicula.getNombre().equals(nombrePelicula)) {
+                return pelicula;
+            }
+        }
+        return null;
+    }
+    
     public void agregarPeliculaFavorita(String nombrePelicula, String rutCliente){
-      Pelicula a = null;
-      if(peliculasFavoritas.containsKey(nombrePelicula)){
-          System.out.println("No se pudo encontrar la película \"" + nombrePelicula + "\".");
-      }else{
-          peliculasFavoritas.put(nombrePelicula, a);
-          System.out.println("La película \"" + nombrePelicula + "\" se ha agregado a las favoritas del cliente con rut " + rutCliente);
-      }
+        Pelicula pelicula = buscarPelicula(nombrePelicula);
+        if(pelicula == null){
+            System.out.println("No se pudo encontrar la película \"" + nombrePelicula + "\".");
+        }else{
+            peliculasFavoritas.put(nombrePelicula, pelicula);
+            System.out.println("La película \"" + nombrePelicula + "\" se ha agregado a las favoritas del cliente con rut " + rutCliente);
+        }
   }
 
     public void mostrarPeliculasFavoritas(String rutCliente){
-      if(peliculasFavoritas.containsValue(rutCliente)){
-          System.out.println("El cliente con rut " + rutCliente + " no tiene películas favoritas.");
-      }
-      else{
-          System.out.println("Las películas favoritas del cliente con rut " + rutCliente + " son:");
-          for(String nombrePelicula : peliculasFavoritas.keySet()){
-              System.out.println("- " + nombrePelicula);
-          }
-          
-      }
-  }
+        if(peliculasFavoritas.containsValue(rutCliente)){
+            System.out.println("El cliente con rut " + rutCliente + " no tiene películas favoritas.");
+        }else{
+            System.out.println("Las películas favoritas del cliente con rut " + rutCliente + " son:");
+            for(String nombrePelicula : peliculasFavoritas.keySet()){
+                System.out.println("- " + nombrePelicula);
+            }
+        }
+    }
     
     public void mostrarPeliculasFavoritas(String rutCliente,String genero){
       Pelicula peliculasFavoritasCliente = peliculasFavoritas.get(rutCliente);

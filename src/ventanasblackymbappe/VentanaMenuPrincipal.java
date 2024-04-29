@@ -37,6 +37,8 @@ public class VentanaMenuPrincipal extends javax.swing.JFrame {
         Reservar = new javax.swing.JButton();
         Reporte = new javax.swing.JButton();
         Agregar = new javax.swing.JButton();
+        IniciarSesion = new javax.swing.JButton();
+        Historial = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         Salir = new javax.swing.JButton();
@@ -101,6 +103,22 @@ public class VentanaMenuPrincipal extends javax.swing.JFrame {
             }
         });
 
+        IniciarSesion.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        IniciarSesion.setText("Inicio Sesion");
+        IniciarSesion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                IniciarSesionActionPerformed(evt);
+            }
+        });
+
+        Historial.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        Historial.setText("Historial Reserva");
+        Historial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HistorialActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -108,42 +126,53 @@ public class VentanaMenuPrincipal extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(Agregar)
-                            .addComponent(Eliminar)
-                            .addComponent(Reporte)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(Reservar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Devolver, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(MostrarTodas))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(MostrarFav, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(9, Short.MAX_VALUE))
+                        .addComponent(MostrarFav, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Reservar, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(IniciarSesion)
+                            .addComponent(Devolver, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(Eliminar)
+                                .addComponent(Reporte))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(1, 1, 1)
+                                .addComponent(Agregar))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Historial)))
+                .addContainerGap(13, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(43, 43, 43)
+                .addGap(54, 54, 54)
+                .addComponent(IniciarSesion)
+                .addGap(27, 27, 27)
                 .addComponent(Reservar)
-                .addGap(28, 28, 28)
+                .addGap(27, 27, 27)
                 .addComponent(Devolver)
-                .addGap(30, 30, 30)
+                .addGap(18, 18, 18)
                 .addComponent(MostrarTodas)
-                .addGap(30, 30, 30)
+                .addGap(18, 18, 18)
                 .addComponent(MostrarFav)
-                .addGap(31, 31, 31)
+                .addGap(18, 18, 18)
+                .addComponent(Historial)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
                 .addComponent(Agregar)
-                .addGap(29, 29, 29)
+                .addGap(18, 18, 18)
                 .addComponent(Eliminar)
-                .addGap(30, 30, 30)
+                .addGap(18, 18, 18)
                 .addComponent(Reporte)
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addGap(26, 26, 26))
         );
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 255));
@@ -205,31 +234,26 @@ public class VentanaMenuPrincipal extends javax.swing.JFrame {
     private void ReservarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReservarActionPerformed
         VentanaReservar irVentanaReservar = new VentanaReservar(videoClubAux);
         irVentanaReservar.setVisible(true);
-        this.dispose();
     }//GEN-LAST:event_ReservarActionPerformed
 
     private void DevolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DevolverActionPerformed
         VentanaDevolver irVentanaDevolver = new VentanaDevolver(videoClubAux);
         irVentanaDevolver.setVisible(true);
-        this.dispose();
     }//GEN-LAST:event_DevolverActionPerformed
     //SEGUIR CON TODAS
     private void MostrarTodasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MostrarTodasActionPerformed
         VentanaMostrar irVentanaMostrar = new VentanaMostrar(videoClubAux);
-        irVentanaMostrar.setVisible(true);
-        this.dispose();
+        irVentanaMostrar.setVisible(true); 
     }//GEN-LAST:event_MostrarTodasActionPerformed
 
     private void AgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgregarActionPerformed
         VentanaAgregar irVentanaAgregar = new VentanaAgregar(videoClubAux);
         irVentanaAgregar.setVisible(true);
-        this.dispose();
     }//GEN-LAST:event_AgregarActionPerformed
 
     private void EliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EliminarActionPerformed
         VentanaEliminar irVentanaEliminar = new VentanaEliminar(videoClubAux);
         irVentanaEliminar.setVisible(true);
-        this.dispose();
     }//GEN-LAST:event_EliminarActionPerformed
 
     private void ReporteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReporteActionPerformed
@@ -241,10 +265,19 @@ public class VentanaMenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_SalirActionPerformed
 
     private void MostrarFavActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MostrarFavActionPerformed
-        VentanaMostrarFav irVentanaMostrarFav = new VentanaMostrarFav(videoClubAux);
+        VentanaFav irVentanaMostrarFav = new VentanaFav(videoClubAux);
         irVentanaMostrarFav.setVisible(true);
-        this.dispose();
     }//GEN-LAST:event_MostrarFavActionPerformed
+
+    private void IniciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IniciarSesionActionPerformed
+        VentanaIniciarSesion irVentanaIniciarSesion = new VentanaIniciarSesion(videoClubAux);
+        irVentanaIniciarSesion.setVisible(true);
+    }//GEN-LAST:event_IniciarSesionActionPerformed
+
+    private void HistorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HistorialActionPerformed
+        VentanaHistorial irVentanaHistorial = new VentanaHistorial(videoClubAux);
+        irVentanaHistorial.setVisible(true);
+    }//GEN-LAST:event_HistorialActionPerformed
 
     /**
      * @param args the command line arguments
@@ -288,6 +321,8 @@ public class VentanaMenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton Agregar;
     private javax.swing.JButton Devolver;
     private javax.swing.JButton Eliminar;
+    private javax.swing.JButton Historial;
+    private javax.swing.JButton IniciarSesion;
     private javax.swing.JButton MostrarFav;
     private javax.swing.JButton MostrarTodas;
     private javax.swing.JButton Reporte;
