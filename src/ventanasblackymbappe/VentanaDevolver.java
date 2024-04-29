@@ -136,9 +136,8 @@ public class VentanaDevolver extends javax.swing.JFrame {
 
     private void AgregarFavoritosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgregarFavoritosActionPerformed
         String nombre = nombretxt.getText();
-        VideoClub a = new VideoClub();
-        String rut = ((a.getClientes()).get(0)).getRut();
-        a.agregarPeliculaFavorita(nombre, rut);
+        String rut = ((videoClubAux.getClientes()).get(0)).getRut();
+        videoClubAux.agregarPeliculaFavorita(nombre, rut);
     }//GEN-LAST:event_AgregarFavoritosActionPerformed
 
     /**

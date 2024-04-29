@@ -11,13 +11,16 @@ import java.io.FileReader;
 import java.util.List;
 
 public class BlackyMBappeFinal {
+    private static VideoClub videoClubAux;
     public static void main(String[] args)throws IOException,PeliculaNoEncontradaEx,FormatoRutIncorrectoEx {
         
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new VentanaIniciarSesion().setVisible(true);
-            }
-        });
+         VideoClub videoClubAux = new VideoClub();
+        List<Pelicula> peliculas = videoClubAux.getPeliculas();
+        peliculas = ParaLeer.leerPeliculas("C:\\Users\\Javier\\Documents\\NetBeansProjects\\VentanasBlackyMBappe\\src\\ventanasblackymbappe\\peliculas.txt");
+        for(Pelicula pelicula : peliculas){
+            videoClubAux.agregarPelicula(pelicula);
+        }
+        new VentanaIniciarSesion(videoClubAux).setVisible(true);
     }
     
 }

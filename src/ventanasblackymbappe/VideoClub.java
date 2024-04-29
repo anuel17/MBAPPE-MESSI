@@ -151,6 +151,7 @@ public class VideoClub{
           for(String nombrePelicula : peliculasFavoritas.keySet()){
               System.out.println("- " + nombrePelicula);
           }
+          
       }
   }
     
