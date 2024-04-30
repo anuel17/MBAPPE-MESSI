@@ -1,0 +1,45 @@
+-Película El Padrino, Disponible = SI, estudio = Paramount Pictures, género = Drama, fecha de lanzamiento = 1972
+-Película Titanic, Disponible = SI, estudio = 20th Century Studios, género = Romance, fecha de lanzamiento = 1997
+-Película Interestelar, Disponible = SI, estudio = Warner Bros. Pictures, género = Ciencia Ficción, fecha de lanzamiento = 2014
+-Película La La Land, Disponible = SI, estudio = Summit Entertainment, género = Musical, fecha de lanzamiento = 2016
+-Película Jurassic Park, Disponible = SI, estudio = Universal Pictures, género = Ciencia Ficción, fecha de lanzamiento = 1993
+-Película Piratas del Caribe: La maldición de la Perla Negra, Disponible = SI, estudio = Walt Disney Pictures, género = Aventura, fecha de lanzamiento = 2003
+-Película Matrix, Disponible = SI, estudio = Warner Bros. Pictures, género = Ciencia Ficción, fecha de lanzamiento = 1999
+-Película Volver al Futuro, Disponible = SI, estudio = Universal Pictures, género = Ciencia Ficción, fecha de lanzamiento = 1985
+-Película Forrest Gump, Disponible = SI, estudio = Paramount Pictures, género = Drama, fecha de lanzamiento = 1994
+-Película El Resplandor, Disponible = SI, estudio = Warner Bros. Pictures, género = Terror, fecha de lanzamiento = 1980
+-Película Toy Story, Disponible = SI, estudio = Pixar Animation Studios, género = Animación, fecha de lanzamiento = 1995
+-Película El sesenta y 9, Disponible = SI, estudio = Pixar, género = Terror, fecha de lanzamiento = 1898
+-Película Gladiator, Disponible = SI, estudio = DreamWorks Pictures, género = Acción, fecha de lanzamiento = 2000
+-Película El Silencio de los Corderos, Disponible = SI, estudio = Orion Pictures, género = Thriller, fecha de lanzamiento = 1991
+-Película Los Vengadores, Disponible = SI, estudio = Marvel Studios, género = Acción, fecha de lanzamiento = 2012
+-Película El Cisne Negro, Disponible = SI, estudio = Fox Searchlight Pictures, género = Thriller, fecha de lanzamiento = 2010
+-Película Mujer bonita, Disponible = SI, estudio = Touchstone Pictures, género = Romance, fecha de lanzamiento = 1990
+-Película El Gran Lebowski, Disponible = SI, estudio = PolyGram Filmed Entertainment, género = Comedia, fecha de lanzamiento = 1998
+-Película El Origen, Disponible = SI, estudio = Warner Bros. Pictures, género = Ciencia Ficción, fecha de lanzamiento = 2010
+-Película La vida es bella, Disponible = SI, estudio = Miramax Films, género = Drama, fecha de lanzamiento = 1997
+-Película E.T., Disponible = SI, estudio = el extraterrestre, género = Universal Pictures, fecha de lanzamiento = Ciencia Ficción
+-Película El Pianista, Disponible = SI, estudio = Focus Features, género = Drama, fecha de lanzamiento = 2002
+-Película Pulp Fiction, Disponible = SI, estudio = Miramax Films, género = Drama, fecha de lanzamiento = 1994
+-Película Mi amigo Aletsis, Disponible = SI, estudio = ChileLives, género = Comedia, fecha de lanzamiento = 2019
+-Película Blade Runner, Disponible = SI, estudio = Warner Bros. Pictures, género = Ciencia Ficción, fecha de lanzamiento = 1982
+-Película Joker, Disponible = SI, estudio = Warner Bros. Pictures, género = Drama, fecha de lanzamiento = 2019
+-Película El Show de Truman, Disponible = SI, estudio = Paramount Pictures, género = Drama, fecha de lanzamiento = 1998
+-Película La naranja mecánica, Disponible = SI, estudio = Warner Bros. Pictures, género = Ciencia Ficción, fecha de lanzamiento = 1971
+-Película El Rey León, Disponible = SI, estudio = Walt Disney Pictures, género = Animación, fecha de lanzamiento = 2019
+-Película Nemo, Disponible = SI, estudio = Pixar Animation Studios, género = Animación, fecha de lanzamiento = 2003
+-Película Memento, Disponible = SI, estudio = Summit Entertainment, género = Thriller, fecha de lanzamiento = 2000
+-Película Harry Potter y la piedra filosofal, Disponible = SI, estudio = Warner Bros. Pictures, género = Fantasía, fecha de lanzamiento = 2001
+-Película El Gran Hotel Budapest, Disponible = SI, estudio = Fox Searchlight Pictures, género = Comedia, fecha de lanzamiento = 2014
+-Película El club de la pelea, Disponible = SI, estudio = 20th Century Studios, género = Drama, fecha de lanzamiento = 1999
+-Película Up, Disponible = NO, estudio = Pixar Animation Studios, género = Animación, fecha de lanzamiento = 2009
+-Película La lista de Schindler, Disponible = SI, estudio = Universal Pictures, género = Drama, fecha de lanzamiento = 1993
+-Película El Sexto Sentido, Disponible = SI, estudio = Hollywood Pictures, género = Thriller, fecha de lanzamiento = 1999
+-Película Mujer bonita, Disponible = SI, estudio = Touchstone Pictures, género = Romance, fecha de lanzamiento = 1990
+-Película La Vida de Pi, Disponible = SI, estudio = 20th Century Studios, género = Aventura, fecha de lanzamiento = 2012
+-Película El Sexto Sentido, Disponible = SI, estudio = Hollywood Pictures, género = Thriller, fecha de lanzamiento = 1999
+-Película El Gran Lebowski, Disponible = SI, estudio = PolyGram Filmed Entertainment, género = Comedia, fecha de lanzamiento = 1998
+-Película Parásitos, Disponible = SI, estudio = CJ Entertainment, género = Drama, fecha de lanzamiento = 2019
+-Película El Origen, Disponible = SI, estudio = Warner Bros. Pictures, género = Ciencia Ficción, fecha de lanzamiento = 2010
+-Película El Castillo Ambulante, Disponible = SI, estudio = Studio Ghibli, género = Anime, fecha de lanzamiento = 2004
+-Película Black Clover:La espada del Rey mago, Disponible = SI, estudio = Pierrot, género = Anime, fecha de lanzamiento = 2023

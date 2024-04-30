@@ -20,7 +20,7 @@ public class BlackyMBappeFinal {
         for(Pelicula pelicula : peliculas){
             videoClubAux.agregarPelicula(pelicula);
         }
-        new VentanaMenuPrincipal(videoClubAux).setVisible(true);
+        new VentanaIniciarSesion(videoClubAux).setVisible(true);
     }
     
 }

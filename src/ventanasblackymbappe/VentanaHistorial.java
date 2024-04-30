@@ -151,19 +151,22 @@ public class VentanaHistorial extends javax.swing.JFrame {
     }//GEN-LAST:event_nombrePeliculaActionPerformed
 
     private void MostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MostrarActionPerformed
+        //Inicializamos la pelicula para buscarla y asginarle la pelicula buscada
         Pelicula pelicula = null;
+        String nom = nombrePelicula.getText();
         for(Pelicula p : videoClubAux.getPeliculas()){
-            if(p.getNombre().equals(nombrePelicula)){
+            if(p.getNombre().equals(nom)){
                 pelicula = p;
                 break;
             }
         }
-
+        //Vaciamos la tabla
         DefaultTableModel model = (DefaultTableModel) TablaHistorial.getModel();
         model.setRowCount(0);
-
+        //Vemos si existe pelicula y si existe su historial
         if(pelicula != null && !pelicula.getHistorial().isEmpty()){
             for (HistorialPrestamo prestamo : pelicula.getHistorial()){
+                //Lo mostramos por la tabla
                 String rutCliente = prestamo.getRutCliente();
                 String fechaPrestamo = prestamo.getFechaPrestamo();
                 model.addRow(new Object[]{rutCliente, fechaPrestamo});

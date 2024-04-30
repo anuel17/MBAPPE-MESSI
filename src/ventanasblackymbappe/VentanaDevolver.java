@@ -151,8 +151,7 @@ public class VentanaDevolver extends javax.swing.JFrame {
 
     private void DevolverPeliculaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DevolverPeliculaActionPerformed
         String nombre = nombretxt.getText();
-        VideoClub a = new VideoClub();
-        a.cancelarReserva(nombre);
+        videoClubAux.cancelarReserva(nombre);
         this.setVisible(false);
     }//GEN-LAST:event_DevolverPeliculaActionPerformed
 

@@ -144,8 +144,8 @@ public class VentanaReservar extends javax.swing.JFrame {
         String fecha = fechatxt.getText();
         
         String rut = ((videoClubAux.getClientes()).get(0)).getRut();
+        
         try{
-            
             videoClubAux.reservarPelicula(nom, rut,fecha);
         }catch(PeliculaNoEncontradaEx e){
             System.out.println(e.getMessage());
